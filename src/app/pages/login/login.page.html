@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Inicio de Sesion</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="centrado">
+   
+    <ion-item class="fondo input ion-margin-top" lines="none">
+      <ion-input label="Usuario" labelPlacement="floating" [(ngModel)]="mdl_usuario"></ion-input>
+    </ion-item>
+    <ion-item class="fondo input ion-margin-top" lines="none">
+      <ion-input label="Contraseña" type="password" labelPlacement="floating" [(ngModel)]="mdl_contrasena"></ion-input>
+    </ion-item>
+  
+    <ion-button (click)="navegar()" expand="block" class="ion-margin-top boton barra"> Ingresar </ion-button>
+    <ion-button (click)="registrar()" expand="block" class="ion-margin-top boton barra"> Registrarse </ion-button>
+  </div>
+</ion-content>
